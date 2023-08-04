@@ -7,7 +7,7 @@ This repo creates a ChatGPT Slack bot that retrieves your original information. 
 The tech stack is as follows:
 
 - Cloud Functions
-  This is a bridge between Slack and ChatGPT Retrieval Plugin.
+  - This is a bridge between Slack and ChatGPT Retrieval Plugin.
 - Cloud Run
   - The Cloud Run hosts [ChatGPT Retrieval Plugin](https://github.com/openai/chatgpt-retrieval-plugin) developed by FastAPI. This app retrieves the related information using OpenAI API and Pinecone.
 - OpenAI API
@@ -36,11 +36,11 @@ $ export SERVICE_ACCOUNT=aaa # Service account for Cloud Run
 This source is for ChatGPT Slackbot. There are three components:
 
 - `retrieval`
-  ChatGPT retrieval plugin deployed on Google Cloud Run. [Here](https://github.com/openai/chatgpt-retrieval-plugin) is the original source.
+  - ChatGPT retrieval plugin deployed on Google Cloud Run. [Here](https://github.com/openai/chatgpt-retrieval-plugin) is the original source.
 - `slackbot`
-  Slack bot for responding when you mention `@ChatGPT hogehoge` in your slack. The source code is deployed on Google Cloud Functions.
+  - Slack bot for responding when you mention `@ChatGPT hogehoge` in your slack. The source code is deployed on Google Cloud Functions.
 - `pinecone`
-  Shell script for creating Pinecone index.
+  - Shell script for creating Pinecone index.
 
 ## Deployment step
 
